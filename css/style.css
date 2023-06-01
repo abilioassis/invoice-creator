@@ -1,0 +1,25 @@
+/* GENERAL STYLES */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+}
