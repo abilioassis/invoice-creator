@@ -86,7 +86,7 @@ body {
   border-radius: 0;
   font-size: 1rem;
   color: var(--black);
-  width: 30%;
+  width: 25%;
   background: var(--gray);
 }
 
@@ -96,7 +96,7 @@ body {
   font-size: 1.3rem;
   border-radius: 0 7px 7px 0;
   padding: 0.3rem 1rem;
-  width: 10%;
+  width: 15%;
 }
 
 .task-list {
