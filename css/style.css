@@ -75,7 +75,7 @@ body {
   padding: 0.3rem 1rem;
   border: none;
   border-radius: 7px 0 0 7px;
-  width: 70%;
+  width: 60%;
   color: var(--black);
   outline: none;
 }
@@ -86,7 +86,7 @@ body {
   border-radius: 0;
   font-size: 1rem;
   color: var(--black);
-  width: 20%;
+  width: 30%;
   background: var(--gray);
 }
 
