@@ -9,17 +9,165 @@
 }
 
 :root {
-  --black: #000000;
-  --white: #ffffff;
+  --black: #1F2937;
+  --white: #F5F5F5;
+  --blue: #3A69D2;
+  --gray: #D5D4D8;
 }
 
 body {
-  font-size: 1rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Inter', sans-serif;
+  color: var(--white);
 }
 
 .container {
   margin: 0 auto;
   width: 100%;
-  max-width: 800px;
+  max-width: 550px;
+}
+
+.btn {
+  background: var(--blue);
+  color: var(--white);
+  border: none;
+}
+
+/* HEADER */
+
+.container--header {
+  background: var(--blue);
+  /* color: var(--white); */
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header__title {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.header__subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* MAIN */
+
+.container--main {
+  background: var(--black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 2rem; */
+}
+
+.task {
+  padding: 2rem 0;
+  display: flex;
+  width: 70%;
+}
+
+.task__description {
+  padding: 0.3rem 1rem;
+  border: none;
+  border-radius: 7px 0 0 7px;
+  width: 70%;
+  color: var(--black);
+  outline: none;
+}
+
+.task__price {
+  padding: 0.3rem 1rem;
+  border: none;
+  border-radius: 0;
+  font-size: 1rem;
+  color: var(--black);
+  width: 20%;
+  background: var(--gray);
+}
+
+
+.btn--task {
+  font-weight: 800;
+  font-size: 1.3rem;
+  border-radius: 0 7px 7px 0;
+  padding: 0.3rem 1rem;
+}
+
+.task-list {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  width: 70%;
+}
+
+.task-list__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-list__col-name {
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.task-list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.task-list__title {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.task-list__description {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.task-list__remove-link {
+  font-size: 0.5rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.task-list__separator {
+  border-bottom: 1px solid var(--white);
+}
+
+.task-list__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.task-list__notes {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.task-list__total {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.btn--send-invoice {
+  width: 70%;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 3rem 0;
+  border-radius: 7px;
+
 }

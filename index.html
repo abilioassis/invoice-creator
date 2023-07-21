@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="icon"
@@ -13,14 +19,76 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <h1 class="header__title"></h1>
-        <p class="header__subtitle"></p>
+      <div class="container container--header">
+        <h1 class="header__title">Invoice creator</h1>
+        <p class="header__subtitle">Thanks for choosing GoodCorp, LLC!</p>
       </div>
     </header>
     <main>
-      <div class="container"></div>
+      <div class="container container--main">
+        <div class="task">
+          <input
+            type="text"
+            placeholder="Enter task"
+            class="task__description"
+            aria-label="Task description"
+          />
+          <select
+            name="task-price"
+            id="task-price"
+            class="task__price"
+            aria-label="Task price"
+          >
+            <option value="10">$10</option>
+            <option value="20">$20</option>
+            <option value="30">$30</option>
+            <option value="40">$40</option>
+            <option value="50">$50</option>
+          </select>
+          <button id="task-add" class="btn btn--task">+</button>
+        </div>
+        <div class="task-list">
+          <div class="task-list__header">
+            <div class="task-list__col-name">Task</div>
+            <div class="task-list__col-name">Total</div>
+          </div>
+          <div class="task-list__item">
+            <div class="task-list__title">
+              <p class="task-list__description">Wash Car</p>
+              <a class="task-list__remove-link" href="#">Remove</a>
+            </div>
+            <p class="task-list__price">$10</p>
+          </div>
+          <div class="task-list__item">
+            <div class="task-list__title">
+              <p class="task-list__description">Mow Lawn</p>
+              <a class="task-list__remove-link" href="#">Remove</a>
+            </div>
+            <p class="task-list__price">$10</p>
+          </div>
+          <div class="task-list__item">
+            <div class="task-list__title">
+              <p class="task-list__description">Pull Weeds</p>
+              <a class="task-list__remove-link" href="#">Remove</a>
+            </div>
+            <p class="task-list__price">$10</p>
+          </div>
+          <div class="task-list__separator"></div>
+          <div class="task-list__header">
+            <div class="task-list__col-name">Notes</div>
+            <div class="task-list__col-name">Total Amount</div>
+          </div>
+          <div class="task-list__footer">
+            <div class="task-list__notes">
+              We accept cash, credit card, or PayPal
+            </div>
+            <div class="task-list__total">$60</div>
+          </div>
+        </div>
+        <div class="btn btn--send-invoice">Send invoice</div>
+      </div>
     </main>
+
     <script src="js/index.js"></script>
   </body>
 </html>
