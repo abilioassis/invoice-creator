@@ -8,7 +8,7 @@ This is a solution to the [M5 - Invoice Creator](https://scrimba.com/scrim/coffa
 
 ## Links
 
-- Live Site: [Netlify]()
+- Live Site: [Netlify](https://cerulean-nougat-1ebcfd.netlify.app)
 - Codebase: [Github]()
 - Code review: [Scrimba]()
 
