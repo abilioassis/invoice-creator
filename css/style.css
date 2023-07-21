@@ -72,7 +72,7 @@ body {
 }
 
 .task__description {
-  padding: 0.3rem 1rem;
+  padding: 0.5rem 1rem;
   border: none;
   border-radius: 7px 0 0 7px;
   flex: 1;
@@ -81,7 +81,7 @@ body {
 }
 
 .task__price {
-  padding: 0.3rem 0rem;
+  padding: 0.5rem 0rem;
   border: none;
   border-radius: 0;
   font-size: 1rem;
@@ -94,9 +94,9 @@ body {
 
 .btn--task {
   font-weight: 800;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   border-radius: 0 7px 7px 0;
-  padding: 0.3rem 1rem;
+  padding: 0.5rem 1rem;
   width: 80px;
 }
 
