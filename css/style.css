@@ -9,14 +9,14 @@
 }
 
 :root {
-  --black: #1F2937;
-  --white: #F5F5F5;
-  --blue: #3A69D2;
-  --gray: #D5D4D8;
+  --black: #1f2937;
+  --white: #f5f5f5;
+  --blue: #3a69d2;
+  --gray: #d5d4d8;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: var(--white);
 }
 
@@ -36,7 +36,6 @@ body {
 
 .container--header {
   background: var(--blue);
-  /* color: var(--white); */
   height: 140px;
   display: flex;
   flex-direction: column;
@@ -91,7 +90,6 @@ body {
   background: var(--gray);
 }
 
-
 .btn--task {
   font-weight: 800;
   font-size: 1.6rem;
@@ -117,6 +115,12 @@ body {
   text-transform: uppercase;
   font-size: 0.75rem;
   font-weight: 700;
+}
+
+.task-list__items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .task-list__item {
@@ -172,5 +176,4 @@ body {
   font-size: 1.3rem;
   margin: 3rem 0;
   border-radius: 7px;
-
 }
