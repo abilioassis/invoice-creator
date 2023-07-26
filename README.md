@@ -10,7 +10,7 @@ This is a solution to the [M5 - Invoice Creator](https://scrimba.com/scrim/coffa
 
 - Live Site: [Netlify](https://cerulean-nougat-1ebcfd.netlify.app)
 - Codebase: [Github](https://github.com/abilioassis/invoice-creator)
-- Code review: [Scrimba]()
+- Code review: [Scrimba](https://scrimba.com/scrim/co9384633bcc60a20448ac0f0)
 
 ## Built with
 
