@@ -1,7 +1,5 @@
 "use strict";
 
-const EMPTY_STRING = "";
-
 /**
  * Represents a task object.
  * @typedef {Object} Task
@@ -21,29 +19,34 @@ let tasksArray = [];
 const taskListItems = document.querySelector(".task-list__items");
 const taskListTotal = document.querySelector(".task-list__total");
 
-document.addEventListener("click", handleDocumentClickEvents);
+document
+  .querySelector(".container--main")
+  .addEventListener("click", handleDocumentClickEvents);
 
 function handleDocumentClickEvents(e) {
   const objectId = e.target.id;
   const taskId = e.target.dataset.taskId;
   const taskDescriptionInput = document.querySelector(".task__description");
-  const taskPriceInput = Number(document.querySelector(".task__price").value);
+  const taskPrice = Number(document.querySelector(".task__price").value);
 
   if (objectId === "task-add") {
     const taskDescription = taskDescriptionInput.value.trim();
-    if (taskDescription !== EMPTY_STRING) {
-      addTask(taskDescription, taskPriceInput);
+    if (taskDescription) {
+      addTask(taskDescription, taskPrice);
       taskDescriptionInput.value = ""; // Clear input after adding the task
     }
   } else if (objectId === "send-invoice") {
     sendInvoice();
   } else if (taskId) {
-    removeTask(parseInt(taskId));
+    removeTask(Number(taskId));
   }
 }
 
 function addTask(taskDescription, taskPrice) {
-  if (!tasksArray.some((task) => task.description === taskDescription)) {
+  const hasObject = tasksArray.some(
+    (task) => task.description === taskDescription
+  );
+  if (!hasObject) {
     tasksArray.push(new Task(taskDescription, taskPrice));
     updateUI();
   }
